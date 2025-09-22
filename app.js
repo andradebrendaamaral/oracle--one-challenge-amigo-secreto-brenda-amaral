@@ -1,5 +1,3 @@
-let amigos = [];
-
 function adicionarAmigo() {
   const input = document.getElementById('amigo');
   const nome = input.value.trim();
@@ -31,3 +29,45 @@ function sortearAmigo() {
   }
 }
 
+let amigos = [];
+
+// Função para exibir mensagem de boas-vindas
+alert('Bem-vindo ao jogo do número secreto');
+
+// Função para verificar o chute do usuário
+function verificarChute() {
+  let chute = prompt('Escolha um número entre 1 e 100');
+  let numeroSecreto = gerarNumeroAleatorio(1, 100);
+  if (parseInt(chute) === numeroSecreto) {
+    alert(`Parabéns! Você acertou em ${tentativas} tentativa(s).`);
+  } else if (parseInt(chute) > numeroSecreto) {
+    alert('Tente um número menor.');
+  } else {
+    alert('Tente um número maior.');
+  }
+}
+
+// Função para gerar um número aleatório dentro de um intervalo
+function gerarNumeroAleatorio(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// Função para limpar o campo de entrada
+function limparCampo() {
+  document.getElementById('amigo').value = '';
+}
+
+// Função para reiniciar o jogo
+function reiniciarJogo() {
+  amigos = [];
+  mostrarAmigos();
+  limparCampo();
+  exibirMensagemInicial();
+}
+
+// Função para exibir mensagem inicial
+function exibirMensagemInicial() {
+  const mensagem = 'Bem-vindo ao jogo do amigo secreto! Digite os nomes dos seus amigos.';
+  console.log(mensagem);
+  alert(mensagem);
+}

@@ -30,12 +30,20 @@ body {
   max-width: 600px;
 }
 
-.header-banner {
+.banner-principal {
   flex: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px 0 0;
+}
+
+.main-title{
+flex: 60%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 60px;
 }
 
 .input-section {
@@ -47,15 +55,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  width: 100%;
-}
-
-.main-title {
-  font-size: 48px;
-  font-family: "Merriweather", serif;
-  font-weight: 900;
-  font-style: italic;
-  color: var(--color-white);
 }
 
 .section-title {
