@@ -8,8 +8,7 @@ Projeto utilizado nos cursos de lógica de programação da Alura.
 <h3>
   <a href="https://oracle-one-challenge-amigo-secreto.vercel.app/" target="_blank">Link para Deploy!</a>
 </h3>
-<p> Essa aplicação simples de **Amigo Secreto** é para praticar lógica de programação com **HTML, CSS e JavaScript**.  
-</p>
+
 
 ##   🛠 Tecnologias usadas
 <div>
